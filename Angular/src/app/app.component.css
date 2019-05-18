@@ -1,0 +1,17 @@
+     html, body{
+	margin: 20px;
+    }
+    #main {
+	height: 600px;
+	position: relative;
+	width: 600px;
+	background: gold;
+    }
+    #board {
+	margin: 30px;
+	background-image: repeating-linear-gradient(0deg,transparent,transparent 29px, black 29px, black 30px), repeating-linear-gradient(-90deg,transparent,transparent 29px, black 29px, black 30px);
+	background-size: 30px 30px;
+	height: 541;
+	position: absolute;
+	width: 541;
+    }
