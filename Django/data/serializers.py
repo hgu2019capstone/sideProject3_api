@@ -4,4 +4,4 @@ from .models import Stones
 class OmokSerializer(serializers.ModelSerializer):
     class Meta:
         model = Stones
-        fields = ('x', 'y')
+        fields = ('client','x', 'y')

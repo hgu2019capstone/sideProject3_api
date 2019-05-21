@@ -91,6 +91,7 @@ var AppComponent = /** @class */ (function () {
         if (canvas.getContext) {
             for (var _i = 0, _a = this.products; _i < _a.length; _i++) {
                 var entry = _a[_i];
+                var color = entry.client;
                 var coor_X = entry.x;
                 var coor_Y = entry.y;
                 var ctx = canvas.getContext('2d');
@@ -157,7 +158,7 @@ var AppComponent = /** @class */ (function () {
                 var x = (coor_Y - 1) * 30;
                 ctx.beginPath();
                 ctx.arc(x, y, 14, 0, 2 * Math.PI, false);
-                ctx.fillStyle = "white";
+                ctx.fillStyle = color;
                 ctx.fill();
                 ctx.lineWidth = 1;
                 ctx.strokeSytle = "black";
@@ -167,7 +168,7 @@ var AppComponent = /** @class */ (function () {
     };
     AppComponent.prototype.getAllBooks = function () {
         return this.http
-            .get("http://turnincode.cafe24.com:8880/home/omok/");
+            .get("./home/omok/");
     };
     AppComponent.prototype.getBooks = function () {
         return this.http
