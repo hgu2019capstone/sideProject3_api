@@ -19,6 +19,8 @@ import subprocess
 import os
 import requests 
 
+from string import ascii_uppercase
+
 class Session1View(TemplateView):
     def get(self, request, **kwargs):
          if request.method == 'GET':
@@ -64,16 +66,39 @@ def ResetData(request):
     return HttpResponse()
 
 def ResultData(request):
- 
+
     black = Stones.objects.filter(client="black")
-    
-    bCount = black.count()    
-    if(bCount >= 6):
-        if Stones.objects.filter(client="black",x="A").count() == 6:
-            result = str('YOU WIN !!! ')
-            return JsonResponse(result , safe = False)   
-  
+    white = Stones.objects.filter(client="white")
+
+    bCount = black.count()
+    wCount = white.count()
+
+    row = list(ascii_uppercase)
+
+    for i in row:
+        for j in range(1,20):
+            if black.filter(x=i, y=j).count() == 1:
+                cnt=1
+                for jj in range(1, 6):
+                    if Stones.objects.filter(client="black",x=i, y=j+jj).count() == 1:
+                        cnt+=1
+                if cnt == 6:
+                    result = str('Black WIN !!! ')
+                    return JsonResponse(result , safe = False)
+                else:
+                    cnt =0
+            elif Stones.objects.filter(client="white",x=i, y=j).count() == 1:
+                cnt=1
+                for jj in range(1, 6):
+                    if Stones.objects.filter(client="white",x=i, y=j+jj).count() == 1:
+                        cnt+=1
+                if cnt == 6:
+                    result = str('White WIN !!! ')
+                    return JsonResponse(result , safe = False)
+                else:
+                    cnt=0
     return HttpResponse()
+
 
 class OmokViewSet(viewsets.ModelViewSet):
         queryset = Stones.objects.all()

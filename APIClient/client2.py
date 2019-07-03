@@ -83,8 +83,8 @@ while True:
     res = requests.post('http://turnincode.cafe24.com:8000/home/omok/', data = data)
 
     index += 1
-    x = input_timer("x: ",7)
-    y = input_timer("y: ",2)
+    x = input_timer("x: ",10)
+    y = input_timer("y: ",10)
 
     data =  {'client': 'black','x': x, 'y': y}
     res = requests.post('http://turnincode.cafe24.com:8000/home/omok/', data = data)

@@ -71,8 +71,8 @@ def getUrl(index):
 index = 2;
 
 while True:
-    x = input_timer("x: ",7)
-    y = input_timer("y: ",2)
+    x = input_timer("x: ",10)
+    y = input_timer("y: ",10)
 
     data =  {'client': 'white','x': x, 'y': y}
     res = requests.post('http://turnincode.cafe24.com:8000/home/omok/', data = data)
