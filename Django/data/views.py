@@ -70,7 +70,8 @@ def ResultData(request):
     bCount = black.count()    
     if(bCount >= 6):
         if Stones.objects.filter(client="black",x="A").count() == 6:
-            return HttpResponse('{ "name" : "GOOD" } ')        
+            result = str('YOU WIN !!! ')
+            return JsonResponse(result , safe = False)   
   
     return HttpResponse()
 
