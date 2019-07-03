@@ -13,4 +13,5 @@ urlpatterns = [
     url(r'^apitest/$',views.CalcTest),
     url(r'^home/',include(router.urls)),
     url(r'^resetdata/$', views.ResetData),
+    url(r'^resultdata/$', views.ResultData),
 ]

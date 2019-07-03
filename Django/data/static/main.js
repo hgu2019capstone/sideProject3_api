@@ -67,11 +67,11 @@ __webpack_require__.r(__webpack_exports__);
 var AppComponent = /** @class */ (function () {
     function AppComponent(http) {
         this.http = http;
-        this.title = 'djint';
+        this.title = 'Connect 6';
         this.source = Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["timer"])(2000, 1000);
         this.products = [];
         this.c1 = new Cust();
-        this.c1.name = "eli";
+        this.c1.name = "playing ...";
     }
     AppComponent.prototype.click1 = function () {
         this.sub.unsubscribe();
@@ -163,11 +163,15 @@ var AppComponent = /** @class */ (function () {
                 ctx.lineWidth = 1;
                 ctx.strokeSytle = "black";
                 ctx.stroke();
+                this.resultData().subscribe(function (m) { return _this.c1.name = m.toString(); });
             }
         }
     };
     AppComponent.prototype.resetData = function () {
         return this.http.get("./resetdata/");
+    };
+    AppComponent.prototype.resultData = function () {
+        return this.http.get("./resultdata/");
     };
     AppComponent.prototype.getAllData = function () {
         return this.http

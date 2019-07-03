@@ -24,8 +24,8 @@ class Session1View(TemplateView):
          if request.method == 'GET':
             return render(request, 'index.html', context=None)
 
-    def post(self, request, **kwargs):
-        return redirect(reverse('session2'))
+#    def post(self, request, **kwargs):
+#        return redirect(reverse('session2'))
 
 class Session2View(TemplateView):
     def get(self, request, **kwargs):
@@ -61,6 +61,17 @@ def ResetData(request):
     data = {'client': 'black', 'x': 'J', 'y':10 }
     requests.post('http://turnincode.cafe24.com:8000/home/omok/', data=data)
 
+    return HttpResponse()
+
+def ResultData(request):
+ 
+    black = Stones.objects.filter(client="black")
+    
+    bCount = black.count()    
+    if(bCount >= 6):
+        if Stones.objects.filter(client="black",x="A").count() == 6:
+            return HttpResponse('{ "name" : "GOOD" } ')        
+  
     return HttpResponse()
 
 class OmokViewSet(viewsets.ModelViewSet):
