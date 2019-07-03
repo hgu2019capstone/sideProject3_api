@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^$', views.Session1View.as_view(), name='session1'),
     url(r'^apitest/$',views.CalcTest),
     url(r'^home/',include(router.urls)),
+    url(r'^resetdata/$', views.ResetData),
 ]

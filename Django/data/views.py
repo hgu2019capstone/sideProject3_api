@@ -15,6 +15,10 @@ from data.models import Stones
 from .serializers import OmokSerializer
 from django.shortcuts import redirect, render
 
+import subprocess
+import os
+import requests 
+
 class Session1View(TemplateView):
     def get(self, request, **kwargs):
          if request.method == 'GET':
@@ -40,6 +44,24 @@ def CalcTest(x1):
     except ValueError as e:
         return Response(e.args[0],status.HTTP_400_BAD_REQUEST)
 
+def ResetData(request):
+    os.chdir(os.path.abspath(''))
+    command = 'rm db.sqlite3'
+    command = command.split()
+ 
+    p = subprocess.Popen(command, stdin=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+    p.communicate()
+
+    command = 'python manage.py migrate'
+    command = command.split()
+
+    p = subprocess.Popen(command, stdin=subprocess.PIPE, stderr=subprocess.PIPE, universal_newlines=True)
+    p.communicate()
+
+    data = {'client': 'black', 'x': 'J', 'y':10 }
+    requests.post('http://turnincode.cafe24.com:8000/home/omok/', data=data)
+
+    return HttpResponse()
 
 class OmokViewSet(viewsets.ModelViewSet):
         queryset = Stones.objects.all()

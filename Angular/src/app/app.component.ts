@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, timer } from 'rxjs';
+import { Observable, timer, Subscription } from 'rxjs';
 
 
 @Component({
@@ -16,17 +16,20 @@ export class AppComponent {
   }
 
   products: any = [];
-  
   c1:Cust = new Cust();
+  private sub : Subscription;
+  
   click1(){
-    this.getBooks().subscribe(b => this.c1.name = b.toString())
+    this.sub.unsubscribe();
   }
-  click2(){
-    this.source.subscribe((t) => this.onTimeOut());
+  click2(){  
+    this.resetData().subscribe(); 
+    this.sub = this.source.subscribe((t) => this.onTimeOut());
   }
 
   onTimeOut(){ 
-    this.getAllBooks().subscribe(data=> {
+    
+    this.getAllData().subscribe(data=> {
 	console.log(data);
 	this.products = data;
 	});
@@ -72,20 +75,21 @@ export class AppComponent {
 	}
 	}
   }
-
   
-  getAllBooks()
+  resetData()
+  {
+    return this.http.get("./resetdata/")
+  }
+ 
+  
+  getAllData()
   {
     return this.http
       .get("./home/omok/")
   }
-  getBooks()
-  {
-    return this.http
-      .post("./apitest/","3")
-  }
 }
 
+ 
 export class Cust{
   name:string;
   age:number;

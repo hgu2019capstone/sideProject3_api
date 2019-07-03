@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "     html, body{\n\tmargin: 20px;\n    }\n    #main {\n\theight: 600px;\n\tposition: relative;\n\twidth: 600px;\n\tbackground: gold;\n    }\n    #board {\n\tmargin: 30px;\n\tbackground-image: repeating-linear-gradient(0deg,transparent,transparent 29px, black 29px, black 30px), repeating-linear-gradient(-90deg,transparent,transparent 29px, black 29px, black 30px);\n\tbackground-size: 30px 30px;\n\theight: 541;\n\tposition: absolute;\n\twidth: 541;\n    }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImFwcC5jb21wb25lbnQuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJLQUFLO0NBQ0osWUFBWTtJQUNUO0lBQ0E7Q0FDSCxhQUFhO0NBQ2Isa0JBQWtCO0NBQ2xCLFlBQVk7Q0FDWixnQkFBZ0I7SUFDYjtJQUNBO0NBQ0gsWUFBWTtDQUNaLDhMQUE4TDtDQUM5TCwwQkFBMEI7Q0FDMUIsV0FBVztDQUNYLGtCQUFrQjtDQUNsQixVQUFVO0lBQ1AiLCJmaWxlIjoiYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIgICAgIGh0bWwsIGJvZHl7XG5cdG1hcmdpbjogMjBweDtcbiAgICB9XG4gICAgI21haW4ge1xuXHRoZWlnaHQ6IDYwMHB4O1xuXHRwb3NpdGlvbjogcmVsYXRpdmU7XG5cdHdpZHRoOiA2MDBweDtcblx0YmFja2dyb3VuZDogZ29sZDtcbiAgICB9XG4gICAgI2JvYXJkIHtcblx0bWFyZ2luOiAzMHB4O1xuXHRiYWNrZ3JvdW5kLWltYWdlOiByZXBlYXRpbmctbGluZWFyLWdyYWRpZW50KDBkZWcsdHJhbnNwYXJlbnQsdHJhbnNwYXJlbnQgMjlweCwgYmxhY2sgMjlweCwgYmxhY2sgMzBweCksIHJlcGVhdGluZy1saW5lYXItZ3JhZGllbnQoLTkwZGVnLHRyYW5zcGFyZW50LHRyYW5zcGFyZW50IDI5cHgsIGJsYWNrIDI5cHgsIGJsYWNrIDMwcHgpO1xuXHRiYWNrZ3JvdW5kLXNpemU6IDMwcHggMzBweDtcblx0aGVpZ2h0OiA1NDE7XG5cdHBvc2l0aW9uOiBhYnNvbHV0ZTtcblx0d2lkdGg6IDU0MTtcbiAgICB9XG4iXX0= */"
+module.exports = "html, body{\n        margin: 20px;\n    }\n    #main {\n        height: 600px;\n        position: relative;\n        width: 600px;\n        background: gold;\n    }\n    #board {\n        margin: 30px;\n        background-image: repeating-linear-gradient(0deg,transparent,transparent 29px, black 29px, black 30px), repeating-linear-gradient(-90deg,transparent,transparent 29px, black 29px, black 30px);\n        background-size: 30px 30px;\n        height: 541;\n        position: absolute;\n        width: 541;\n    }\n    #smallcircle1 {\n        border-radius: 50%;\n        width: 4;\n        height: 4;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 117px;\n        left: 117px;\n    }\n    #smallcircle2 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 117px;\n        left: 297px;\n    }\n    #smallcircle3 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 117px;\n        left: 477px;\n    }\n    #smallcircle4 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 297px;\n        left: 117px;\n    }\n    #smallcircle5 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 297px;\n        left: 297px;\n    }\n    #smallcircle6 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 297px;\n        left: 477px;\n    }\n    #smallcircle7 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 477px;\n        left: 117px;\n    }\n    #smallcircle8 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 477px;\n        left: 297px;\n    }\n    #smallcircle9 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 477px;\n        left: 477px;\n    }\n\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7UUFDUSxZQUFZO0lBQ2hCO0lBQ0E7UUFDSSxhQUFhO1FBQ2Isa0JBQWtCO1FBQ2xCLFlBQVk7UUFDWixnQkFBZ0I7SUFDcEI7SUFDQTtRQUNJLFlBQVk7UUFDWiw4TEFBOEw7UUFDOUwsMEJBQTBCO1FBQzFCLFdBQVc7UUFDWCxrQkFBa0I7UUFDbEIsVUFBVTtJQUNkO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJodG1sLCBib2R5e1xuICAgICAgICBtYXJnaW46IDIwcHg7XG4gICAgfVxuICAgICNtYWluIHtcbiAgICAgICAgaGVpZ2h0OiA2MDBweDtcbiAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICB3aWR0aDogNjAwcHg7XG4gICAgICAgIGJhY2tncm91bmQ6IGdvbGQ7XG4gICAgfVxuICAgICNib2FyZCB7XG4gICAgICAgIG1hcmdpbjogMzBweDtcbiAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogcmVwZWF0aW5nLWxpbmVhci1ncmFkaWVudCgwZGVnLHRyYW5zcGFyZW50LHRyYW5zcGFyZW50IDI5cHgsIGJsYWNrIDI5cHgsIGJsYWNrIDMwcHgpLCByZXBlYXRpbmctbGluZWFyLWdyYWRpZW50KC05MGRlZyx0cmFuc3BhcmVudCx0cmFuc3BhcmVudCAyOXB4LCBibGFjayAyOXB4LCBibGFjayAzMHB4KTtcbiAgICAgICAgYmFja2dyb3VuZC1zaXplOiAzMHB4IDMwcHg7XG4gICAgICAgIGhlaWdodDogNTQxO1xuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgIHdpZHRoOiA1NDE7XG4gICAgfVxuICAgICNzbWFsbGNpcmNsZTEge1xuICAgICAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgICAgIHdpZHRoOiA0O1xuICAgICAgICBoZWlnaHQ6IDQ7XG4gICAgICAgIGJhY2tncm91bmQ6IGJsYWNrO1xuICAgICAgICBib3JkZXI6IHNvbGlkIGJsYWNrO1xuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgIHRvcDogMTE3cHg7XG4gICAgICAgIGxlZnQ6IDExN3B4O1xuICAgIH1cbiAgICAjc21hbGxjaXJjbGUyIHtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICAgICAgICB3aWR0aDogMztcbiAgICAgICAgaGVpZ2h0OiAzO1xuICAgICAgICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgICAgICAgYm9yZGVyOiBzb2xpZCBibGFjaztcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICB0b3A6IDExN3B4O1xuICAgICAgICBsZWZ0OiAyOTdweDtcbiAgICB9XG4gICAgI3NtYWxsY2lyY2xlMyB7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICAgICAgd2lkdGg6IDM7XG4gICAgICAgIGhlaWdodDogMztcbiAgICAgICAgYmFja2dyb3VuZDogYmxhY2s7XG4gICAgICAgIGJvcmRlcjogc29saWQgYmxhY2s7XG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgICAgdG9wOiAxMTdweDtcbiAgICAgICAgbGVmdDogNDc3cHg7XG4gICAgfVxuICAgICNzbWFsbGNpcmNsZTQge1xuICAgICAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgICAgIHdpZHRoOiAzO1xuICAgICAgICBoZWlnaHQ6IDM7XG4gICAgICAgIGJhY2tncm91bmQ6IGJsYWNrO1xuICAgICAgICBib3JkZXI6IHNvbGlkIGJsYWNrO1xuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgIHRvcDogMjk3cHg7XG4gICAgICAgIGxlZnQ6IDExN3B4O1xuICAgIH1cbiAgICAjc21hbGxjaXJjbGU1IHtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICAgICAgICB3aWR0aDogMztcbiAgICAgICAgaGVpZ2h0OiAzO1xuICAgICAgICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgICAgICAgYm9yZGVyOiBzb2xpZCBibGFjaztcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICB0b3A6IDI5N3B4O1xuICAgICAgICBsZWZ0OiAyOTdweDtcbiAgICB9XG4gICAgI3NtYWxsY2lyY2xlNiB7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICAgICAgd2lkdGg6IDM7XG4gICAgICAgIGhlaWdodDogMztcbiAgICAgICAgYmFja2dyb3VuZDogYmxhY2s7XG4gICAgICAgIGJvcmRlcjogc29saWQgYmxhY2s7XG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgICAgdG9wOiAyOTdweDtcbiAgICAgICAgbGVmdDogNDc3cHg7XG4gICAgfVxuICAgICNzbWFsbGNpcmNsZTcge1xuICAgICAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgICAgIHdpZHRoOiAzO1xuICAgICAgICBoZWlnaHQ6IDM7XG4gICAgICAgIGJhY2tncm91bmQ6IGJsYWNrO1xuICAgICAgICBib3JkZXI6IHNvbGlkIGJsYWNrO1xuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgIHRvcDogNDc3cHg7XG4gICAgICAgIGxlZnQ6IDExN3B4O1xuICAgIH1cbiAgICAjc21hbGxjaXJjbGU4IHtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICAgICAgICB3aWR0aDogMztcbiAgICAgICAgaGVpZ2h0OiAzO1xuICAgICAgICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgICAgICAgYm9yZGVyOiBzb2xpZCBibGFjaztcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICB0b3A6IDQ3N3B4O1xuICAgICAgICBsZWZ0OiAyOTdweDtcbiAgICB9XG4gICAgI3NtYWxsY2lyY2xlOSB7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICAgICAgd2lkdGg6IDM7XG4gICAgICAgIGhlaWdodDogMztcbiAgICAgICAgYmFja2dyb3VuZDogYmxhY2s7XG4gICAgICAgIGJvcmRlcjogc29saWQgYmxhY2s7XG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgICAgdG9wOiA0NzdweDtcbiAgICAgICAgbGVmdDogNDc3cHg7XG4gICAgfVxuXG4iXX0= */"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = "     html, body{\n\tmargin: 20px;\n    }\n    #main {\n\theigh
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n  <h2>Test App: {{c1.name}}</h2>\n  <button (click)=\"click1()\" >click me</button>\n  <button (click)=\"click2()\" >test</button>\n</div>\n\n\n  <body>\n      <div id = \"main\">\n            <canvas id=\"board\" width = \"541\" height=\"541\"></canvas>\n      </div>\n      <br/>\n  </body>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      \n\n\n\n\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n  <h2>Test App: {{c1.name}}</h2>\n  <button (click)=\"click1()\" >stop</button>\n  <button (click)=\"click2()\" >TEST</button>\n</div>\n\n\n  <body>\n      <div id = \"main\">\n          <canvas id=\"board\" width = \"541\" height=\"541\"></canvas> \n              <div id=\"smallcircle1\"></div>\n              <div id=\"smallcircle2\"></div>\n              <div id=\"smallcircle3\"></div>\n              <div id=\"smallcircle4\"></div>\n              <div id=\"smallcircle5\"></div>\n              <div id=\"smallcircle6\"></div>\n              <div id=\"smallcircle7\"></div>\n              <div id=\"smallcircle8\"></div>\n              <div id=\"smallcircle9\"></div>               \n      </div>\n      <br/>\n  </body>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      \n\n\n\n\n"
 
 /***/ }),
 
@@ -74,16 +74,16 @@ var AppComponent = /** @class */ (function () {
         this.c1.name = "eli";
     }
     AppComponent.prototype.click1 = function () {
-        var _this = this;
-        this.getBooks().subscribe(function (b) { return _this.c1.name = b.toString(); });
+        this.sub.unsubscribe();
     };
     AppComponent.prototype.click2 = function () {
         var _this = this;
-        this.source.subscribe(function (t) { return _this.onTimeOut(); });
+        this.resetData().subscribe();
+        this.sub = this.source.subscribe(function (t) { return _this.onTimeOut(); });
     };
     AppComponent.prototype.onTimeOut = function () {
         var _this = this;
-        this.getAllBooks().subscribe(function (data) {
+        this.getAllData().subscribe(function (data) {
             console.log(data);
             _this.products = data;
         });
@@ -166,13 +166,12 @@ var AppComponent = /** @class */ (function () {
             }
         }
     };
-    AppComponent.prototype.getAllBooks = function () {
+    AppComponent.prototype.resetData = function () {
+        return this.http.get("./resetdata/");
+    };
+    AppComponent.prototype.getAllData = function () {
         return this.http
             .get("./home/omok/");
-    };
-    AppComponent.prototype.getBooks = function () {
-        return this.http
-            .post("./apitest/", "3");
     };
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -248,7 +247,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJib29rcy9ib29rcy5jb21wb25lbnQuY3NzIn0= */"
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2Jvb2tzL2Jvb2tzLmNvbXBvbmVudC5jc3MifQ== */"
 
 /***/ }),
 
