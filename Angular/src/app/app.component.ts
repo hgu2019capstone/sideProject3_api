@@ -9,14 +9,14 @@ import { Observable, timer, Subscription } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'djint';
+  title = 'Connect 6';
   source = timer(2000,1000);
   constructor(private http:HttpClient) {
-    this.c1.name = "eli"
+    this.c1.result = "test";
   }
 
+  c1 : Result = new Result();
   products: any = [];
-  c1:Cust = new Cust();
   private sub : Subscription;
   
   click1(){
@@ -72,6 +72,7 @@ export class AppComponent {
 	   ctx.lineWidth = 1;
   	   ctx.strokeSytle = "black";
 	   ctx.stroke();
+           this.resultData().subscribe(m => this.c1.result = m.toString());
 	}
 	}
   }
@@ -81,17 +82,20 @@ export class AppComponent {
     return this.http.get("./resetdata/")
   }
  
+  resultData()
+  {
+    return this.http.get("./resultdata/")
+  }
   
   getAllData()
   {
     return this.http
       .get("./home/omok/")
   }
+
 }
 
- 
-export class Cust{
-  name:string;
-  age:number;
-  city:string;
+export class Result{
+    result : String;
 }
+

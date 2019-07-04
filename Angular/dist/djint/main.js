@@ -41,7 +41,7 @@ module.exports = "html, body{\n        margin: 20px;\n    }\n    #main {\n      
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n  <h2>Test App: {{c1.name}}</h2>\n  <button (click)=\"click1()\" >stop</button>\n  <button (click)=\"click2()\" >TEST</button>\n</div>\n\n\n  <body>\n      <div id = \"main\">\n          <canvas id=\"board\" width = \"541\" height=\"541\"></canvas> \n              <div id=\"smallcircle1\"></div>\n              <div id=\"smallcircle2\"></div>\n              <div id=\"smallcircle3\"></div>\n              <div id=\"smallcircle4\"></div>\n              <div id=\"smallcircle5\"></div>\n              <div id=\"smallcircle6\"></div>\n              <div id=\"smallcircle7\"></div>\n              <div id=\"smallcircle8\"></div>\n              <div id=\"smallcircle9\"></div>               \n      </div>\n      <br/>\n  </body>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      \n\n\n\n\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n  <h2>Test App: {{ c1.result }}</h2>\n  <button (click)=\"click1()\" >stop</button>\n  <button (click)=\"click2()\" >TEST</button>\n</div>\n\n\n  <body>\n      <div id = \"main\">\n          <canvas id=\"board\" width = \"541\" height=\"541\"></canvas> \n              <div id=\"smallcircle1\"></div>\n              <div id=\"smallcircle2\"></div>\n              <div id=\"smallcircle3\"></div>\n              <div id=\"smallcircle4\"></div>\n              <div id=\"smallcircle5\"></div>\n              <div id=\"smallcircle6\"></div>\n              <div id=\"smallcircle7\"></div>\n              <div id=\"smallcircle8\"></div>\n              <div id=\"smallcircle9\"></div>               \n      </div>\n      <br/>\n  </body>\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n      \n\n\n\n\n"
 
 /***/ }),
 
@@ -49,13 +49,13 @@ module.exports = "<!--The content below is only a placeholder and can be replace
 /*!**********************************!*\
   !*** ./src/app/app.component.ts ***!
   \**********************************/
-/*! exports provided: AppComponent, Cust */
+/*! exports provided: AppComponent, Result */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppComponent", function() { return AppComponent; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Cust", function() { return Cust; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Result", function() { return Result; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
@@ -67,11 +67,11 @@ __webpack_require__.r(__webpack_exports__);
 var AppComponent = /** @class */ (function () {
     function AppComponent(http) {
         this.http = http;
-        this.title = 'djint';
+        this.title = 'Connect 6';
         this.source = Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["timer"])(2000, 1000);
+        this.c1 = new Result();
         this.products = [];
-        this.c1 = new Cust();
-        this.c1.name = "eli";
+        this.c1.result = "test";
     }
     AppComponent.prototype.click1 = function () {
         this.sub.unsubscribe();
@@ -163,11 +163,15 @@ var AppComponent = /** @class */ (function () {
                 ctx.lineWidth = 1;
                 ctx.strokeSytle = "black";
                 ctx.stroke();
+                this.resultData().subscribe(function (m) { return _this.c1.result = m.toString(); });
             }
         }
     };
     AppComponent.prototype.resetData = function () {
         return this.http.get("./resetdata/");
+    };
+    AppComponent.prototype.resultData = function () {
+        return this.http.get("./resultdata/");
     };
     AppComponent.prototype.getAllData = function () {
         return this.http
@@ -184,10 +188,10 @@ var AppComponent = /** @class */ (function () {
     return AppComponent;
 }());
 
-var Cust = /** @class */ (function () {
-    function Cust() {
+var Result = /** @class */ (function () {
+    function Result() {
     }
-    return Cust;
+    return Result;
 }());
 
 
