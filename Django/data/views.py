@@ -96,7 +96,55 @@ def ResultData(request):
                     result = str('White WIN !!! ')
                     return JsonResponse(result , safe = False)
                 else:
-                    cnt=0
+                   cnt=0
+
+    for j in range(1,20):
+        for i in row:
+            if black.filter(x=i, y=j).count() == 1:
+                cnt = 1
+                for jj in range(1, 6):
+                    if black.filter(x=chr(ord(i)+jj), y=j).count() == 1:
+                        cnt +=1
+                if cnt == 6:
+                    result = str('Black WIN !!!! ')
+                    return JsonResponse(result, safe = False)
+                else:
+                    cnt =0
+            elif white.filter(x=i, y=j).count() == 1:
+                cnt = 1
+                for jj in range(1,6):
+                    if white.filter(x=chr(ord(i)+jj), y=j).count() == 1:
+                        cnt +=1
+                if cnt == 6:
+                    result = str('White WIN !!!! ')
+                    return JsonResponse(result, safe = False)
+                else:
+                    cnt =0
+
+
+    for i in range(1,20):
+        for j in row:
+            if black.filter(x=j, y=i).count() == 1:
+                cnt = 1
+                for jj in range(1,6):
+                    if Stones.objects.filter(client="black", x=chr(ord(j)+jj) , y = i+jj).count()==1:
+                        cnt+=1
+                if cnt == 6:
+                    result = str('Black WIN !!! ')
+                    return JsonResponse(result, safe=False)
+                else:
+                    cnt = 0    
+            if white.filter(x=j, y=i).count() == 1:
+                cnt = 1
+                for jj in range(1,6):
+                    if Stones.objects.filter(client="white", x=chr(ord(j)+jj) , y = i+jj).count()==1:
+                        cnt+=1
+                if cnt == 6:
+                    result = str('White WIN !!! ')
+                    return JsonResponse(result, safe=False)
+                else:
+                    cnt = 0    
+
     return HttpResponse()
 
 
