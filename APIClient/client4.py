@@ -2,6 +2,7 @@ import requests, json
 import time
 import random
 import sys
+from timeout import timeout
 
 def input_timer(prompt, timeout_sec):
     import subprocess
@@ -60,7 +61,7 @@ def input_timer(prompt, timeout_sec):
     t = Local()
     return t.input_timer_main(prompt, timeout_sec)
 
-
+@timeout(7)
 def getUrl(index):
     url = 'http://turnincode.cafe24.com:'+sys.argv[1]+'/home/omok/'+str(index)+'/'
     res = requests.get(url)
@@ -79,17 +80,17 @@ while True:
     getUrl(index)
 
     index +=1
-    x = input_timer("x: ",7)
-    y = input_timer("y: ",2)
+    x = random.choice('ABCDEFGHIJKLMNOPQRS')
+    y = random.randrange(1, 20)
 
-    data =  {'client': 'black','x': x, 'y': y}
+    data =  {'room_id': 1, 'client': 'black','x': x, 'y': y}
     res = requests.post('http://turnincode.cafe24.com:'+sys.argv[1]+'/home/omok/', data = data)
 
     index += 1
-    x = input_timer("x: ",7)
-    y = input_timer("y: ",2)
+    x = random.choice('ABCDEFGHIJKLMNOPQRS')
+    y = random.randrange(1, 20)
     
-    data =  {'client': 'black','x': x, 'y': y}
+    data =  {'room_id':1, 'client': 'black','x': x, 'y': y}
     res = requests.post('http://turnincode.cafe24.com:'+sys.argv[1]+'/home/omok/', data = data)
     
     index += 1 

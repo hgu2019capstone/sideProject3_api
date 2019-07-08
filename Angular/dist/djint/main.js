@@ -41,7 +41,7 @@ module.exports = "html, body{\n        margin: 20px;\n    }\n    #main {\n      
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n  <h2>Test App: {{c1.name}}</h2>\n  <button (click)=\"click1()\" >stop</button>\n  <button (click)=\"click2()\" >TEST</button>\n</div>\n\n\n  <body>\n      <div id = \"main\">\n          <canvas id=\"board\" width = \"541\" height=\"541\"></canvas> \n              <div id=\"smallcircle1\"></div>\n              <div id=\"smallcircle2\"></div>\n              <div id=\"smallcircle3\"></div>\n              <div id=\"smallcircle4\"></div>\n              <div id=\"smallcircle5\"></div>\n              <div id=\"smallcircle6\"></div>\n              <div id=\"smallcircle7\"></div>\n              <div id=\"smallcircle8\"></div>\n              <div id=\"smallcircle9\"></div>               \n      </div>\n      <br/>\n  </body>\n"
+module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n  <h2>Test App: {{c1.result}}</h2>\n  <button (click)=\"click1()\" >stop</button>\n  <button (click)=\"click2()\" >TEST</button>\n</div>\n\n\n  <body>\n      <div id = \"main\">\n          <canvas id=\"board\" width = \"541\" height=\"541\"></canvas> \n              <div id=\"smallcircle1\"></div>\n              <div id=\"smallcircle2\"></div>\n              <div id=\"smallcircle3\"></div>\n              <div id=\"smallcircle4\"></div>\n              <div id=\"smallcircle5\"></div>\n              <div id=\"smallcircle6\"></div>\n              <div id=\"smallcircle7\"></div>\n              <div id=\"smallcircle8\"></div>\n              <div id=\"smallcircle9\"></div>               \n      </div>\n      <br/>\n  </body>\n"
 
 /***/ }),
 
@@ -78,7 +78,6 @@ var AppComponent = /** @class */ (function () {
     };
     AppComponent.prototype.click2 = function () {
         var _this = this;
-        this.resetData().subscribe();
         this.sub = this.source.subscribe(function (t) { return _this.onTimeOut(); });
     };
     AppComponent.prototype.onTimeOut = function () {

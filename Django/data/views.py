@@ -5,6 +5,9 @@ from django.utils.safestring import mark_safe
 import json
 from django.urls import reverse
 
+from django.conf import settings
+from django.core.files.storage import FileSystemStorage
+
 # Create your views here.
 from rest_framework import status
 from rest_framework.decorators import api_view
@@ -44,6 +47,26 @@ def room(request, room_name):
     return HttpResponseRedirect(reverse(game, kwargs={'room_name': room_name}))
 
 def game(request, room_name):
+    if request.method == 'POST' and request.FILES.get('myfile',''):
+        myfile = request.FILES['myfile']
+        fs = FileSystemStorage()
+        filename = fs.save(myfile.name, myfile)
+        uploaded_file_url = fs.url(filename)
+        return render(request, 'index.html', {
+            'room_name_json': mark_safe(json.dumps(room_name)),
+            'uploaded_file_url': uploaded_file_url
+        })
+    
+    elif request.method == 'POST' and request.FILES.get('myfile2',''):
+        myfile2 = request.FILES['myfile2']
+        fs = FileSystemStorage()
+        filename = fs.save(myfile2.name, myfile2)
+        uploaded_file_url = fs.url(filename)
+        return render(request, 'index.html', {
+            'room_name_json': mark_safe(json.dumps(room_name)),
+            'uploaded_file_url': uploaded_file_url
+        })
+        
     return render(request, 'index.html', {
         'room_name_json': mark_safe(json.dumps(room_name))
     })
@@ -52,6 +75,8 @@ def check(request, room_name):
     if Game.objects.filter(room_name=room_name).exists():
         return HttpResponseRedirect(reverse(game, kwargs={'room_name': room_name}))    
     return HttpResponseRedirect(reverse(index))
+
+
 
 class Session2View(TemplateView):
     def get(self, request, **kwargs):

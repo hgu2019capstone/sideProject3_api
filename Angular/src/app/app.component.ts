@@ -24,7 +24,6 @@ export class AppComponent {
     this.sub.unsubscribe();
   }
   click2(){  
-    this.resetData().subscribe(); 
     this.sub = this.source.subscribe((t) => this.onTimeOut());
   }
 
