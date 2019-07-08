@@ -1,4 +1,23 @@
 {% load static %}
+
+{% include 'material/includes/material_css.html' %}
+{% include 'material/includes/material_js.html' %}
+
+{% block sidebar %}
+<ul class="sidebar-nav-wrapper">
+   {% if user.is_authenticated %}
+     <li><i class="material-icons prefix">face</i>{{ user.get_username }}<a href="{% url 'logout'%}">  Logout</a></li>
+   {% else %}
+     <script type="text/javascript">
+         (function() {
+        alert('please login.');
+        window.location.replace("{% url 'login'%}");
+    })();       
+     </script>
+   {% endif %}
+  </ul>
+{% endblock %}
+               
 <!doctype html>
 <html>
 <head>
@@ -18,4 +37,9 @@
 <script type="text/javascript" src="{% static 'vendor.js' %}"></script>
   <script type="text/javascript" src="{% static 'runtime.js' %}"></script>
 <script type="text/javascript" src="{% static 'main.js' %}"></script></body>
+<script>
+	var roomName = {{ room_name_json }};
+	console.log( roomName );
+</script>
 </html>
+

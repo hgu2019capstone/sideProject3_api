@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, timer } from 'rxjs';
+import { Observable, timer, Subscription } from 'rxjs';
 
 
 @Component({
@@ -8,25 +8,29 @@ import { Observable, timer } from 'rxjs';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  title = 'djint';
+  title = 'Connect 6';
   source = timer(2000,1000);
   constructor(private http:HttpClient) {
-    this.c1.name = "eli"
+    this.c1.result = "test"
   }
 
   products: any = [];
+  c1 : Result = new Result();
+  private sub : Subscription;
   
-  c1:Cust = new Cust();
   click1(){
-    this.getBooks().subscribe(b => this.c1.name = b.toString())
+    this.sub.unsubscribe();
   }
-  click2(){
-    this.source.subscribe((t) => this.onTimeOut());
+  click2(){  
+    this.resetData().subscribe(); 
+    this.sub = this.source.subscribe((t) => this.onTimeOut());
   }
 
   onTimeOut(){ 
-    this.getAllBooks().subscribe(data=> {
+    
+    this.getAllData().subscribe(data=> {
 	console.log(data);
 	this.products = data;
 	});
@@ -69,25 +73,29 @@ export class AppComponent {
 	   ctx.lineWidth = 1;
   	   ctx.strokeSytle = "black";
 	   ctx.stroke();
+	   this.resultData().subscribe(m => this.c1.result = m.toString());
 	}
 	}
   }
-
   
-  getAllBooks()
+  resetData()
+  {
+    return this.http.get("./resetdata/")
+  }
+ 
+  resultData()
+  {
+    return this.http.get("./resultdata/")
+  }
+  
+  getAllData()
   {
     return this.http
       .get("./home/omok/")
   }
-  getBooks()
-  {
-    return this.http
-      .post("./apitest/","3")
-  }
 }
 
-export class Cust{
-  name:string;
-  age:number;
-  city:string;
+export class Result{
+    result : String;
 }
+ 

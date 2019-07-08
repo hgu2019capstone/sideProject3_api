@@ -27,10 +27,13 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+LOGIN_REDIRECT_URL = '/'
 
 # Application definition
 
 INSTALLED_APPS = [
+    'channels',
+    'material',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -40,6 +43,8 @@ INSTALLED_APPS = [
     'data.apps.DataConfig',
     'rest_framework',
 ]
+
+ASGI_APPLICATION = 'datatest.routing.application'
 
 MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
