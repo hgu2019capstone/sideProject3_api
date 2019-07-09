@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, timer, Subscription } from 'rxjs';
 
+class Stone {
+  class: string;
+  left: string;
+  top: string;
+}
 
 @Component({
   selector: 'app-root',
@@ -12,89 +17,89 @@ import { Observable, timer, Subscription } from 'rxjs';
 export class AppComponent {
   title = 'Connect 6';
   source = timer(2000,1000);
+  stoneList: Array<Stone> = [];
+
   constructor(private http:HttpClient) {
-    this.c1.result = "test"
+    this.c1.result = "test";
   }
 
-  products: any = [];
   c1 : Result = new Result();
+  products: any = [];
   private sub : Subscription;
-  
+
   click1(){
     this.sub.unsubscribe();
   }
-  click2(){  
+  click2(){
+    this.resetData().subscribe();
     this.sub = this.source.subscribe((t) => this.onTimeOut());
   }
 
-  onTimeOut(){ 
-    
+  onTimeOut(){
     this.getAllData().subscribe(data=> {
-	console.log(data);
-	this.products = data;
-	});
-	var canvas : any = document.getElementById('board');
-	if(canvas.getContext){
-	   for(let entry of this.products){
-           var color = entry.client;
-	   var coor_X = entry.x;
-	   var coor_Y = entry.y;
-	   var ctx = canvas.getContext('2d');
-	   
-	   var y;
-	   switch(coor_X){	    
-	    case 'A': y = 0*30 ; break ; 
-            case 'B': y = 1*30 ; break ;
-            case 'C': y = 2*30 ; break ;
-            case 'D': y = 3*30 ; break ;
-            case 'E': y = 4*30 ; break ;
-            case 'F': y = 5*30 ; break ;
-            case 'G': y = 6*30 ; break ;
-            case 'H': y = 7*30 ; break ;
-            case 'I': y = 8*30 ; break ;
-            case 'J': y = 9*30 ; break ;
-            case 'K': y = 10*30 ; break ;
-            case 'L': y = 11*30 ; break ;
-            case 'M': y = 12*30 ; break ;
-            case 'N': y = 13*30 ; break ;
-            case 'O': y = 14*30 ; break ;
-            case 'P': y = 15*30 ; break ;
-            case 'Q': y = 16*30 ; break ;
-            case 'R': y = 17*30 ; break ;
-            case 'S': y = 18*30 ; break ;
-	}
-	   var x = (coor_Y - 1) * 30;
+      console.log(data);
+      this.products = data;
+    });
 
-           ctx.beginPath();
-	   ctx.arc(x, y, 14, 0, 2 * Math.PI, false);    
-	   ctx.fillStyle = color;
-	   ctx.fill();
-	   ctx.lineWidth = 1;
-  	   ctx.strokeSytle = "black";
-	   ctx.stroke();
-	   this.resultData().subscribe(m => this.c1.result = m.toString());
-	}
-	}
+    let stoneObj = new Stone();
+
+    for(let entry of this.products){
+      let color = entry.client;
+      let coor_X = entry.x;
+      let coor_Y = entry.y;
+      let left;
+      switch(coor_X){
+        case 'A': left = 4+ 0*40 ; break ;
+        case 'B': left = 4+ 1*40 ; break ;
+        case 'C': left = 4+ 2*40 ; break ;
+        case 'D': left = 4+ 3*40 ; break ;
+        case 'E': left = 4+ 4*40 ; break ;
+        case 'F': left = 4+ 5*40 ; break ;
+        case 'G': left = 4+ 6*40 ; break ;
+        case 'H': left = 4+ 7*40 ; break ;
+        case 'I': left = 4+ 8*40 ; break ;
+        case 'J': left = 4+ 9*40 ; break ;
+        case 'K': left = 4+ 10*40 ; break ;
+        case 'L': left = 4+ 11*40 ; break ;
+        case 'M': left = 4+ 12*40 ; break ;
+        case 'N': left = 4+ 13*40 ; break ;
+        case 'O': left = 4+ 14*40 ; break ;
+        case 'P': left = 4+ 15*40 ; break ;
+        case 'Q': left = 4+ 16*40 ; break ;
+        case 'R': left = 4+ 17*40 ; break ;
+        case 'S': left = 4+ 18*40 ; break ;
+      }
+      let top = 4 + (19-coor_Y)*40;
+      stoneObj.class = color + 'Stone';
+      stoneObj.left = left + 'px';
+      stoneObj.top = top + 'px';
+
+      let secondTick = timer(1000,1000);
+      secondTick.subscribe((tick)=>{ this.stoneList.push(stoneObj); });
+
+      this.resultData().subscribe(m => this.c1.result = m.toString());
+    }
   }
-  
+
   resetData()
   {
     return this.http.get("./resetdata/")
   }
- 
+
   resultData()
   {
     return this.http.get("./resultdata/")
   }
-  
+
   getAllData()
   {
-    return this.http
-      .get("./home/omok/")
+    return this.http.get("./home/omok/")
   }
+
 }
 
-export class Result{
-    result : String;
+export class Result
+{
+  result : String;
 }
- 
+

@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "html, body{\n        margin: 20px;\n    }\n    #main {\n        height: 600px;\n        position: relative;\n        width: 600px;\n        background: gold;\n    }\n    #board {\n        margin: 30px;\n        background-image: repeating-linear-gradient(0deg,transparent,transparent 29px, black 29px, black 30px), repeating-linear-gradient(-90deg,transparent,transparent 29px, black 29px, black 30px);\n        background-size: 30px 30px;\n        height: 541;\n        position: absolute;\n        width: 541;\n    }\n    #smallcircle1 {\n        border-radius: 50%;\n        width: 4;\n        height: 4;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 117px;\n        left: 117px;\n    }\n    #smallcircle2 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 117px;\n        left: 297px;\n    }\n    #smallcircle3 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 117px;\n        left: 477px;\n    }\n    #smallcircle4 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 297px;\n        left: 117px;\n    }\n    #smallcircle5 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 297px;\n        left: 297px;\n    }\n    #smallcircle6 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 297px;\n        left: 477px;\n    }\n    #smallcircle7 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 477px;\n        left: 117px;\n    }\n    #smallcircle8 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 477px;\n        left: 297px;\n    }\n    #smallcircle9 {\n        border-radius: 50%;\n        width: 3;\n        height: 3;\n        background: black;\n        border: solid black;\n        position: absolute;\n        top: 477px;\n        left: 477px;\n    }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7UUFDUSxZQUFZO0lBQ2hCO0lBQ0E7UUFDSSxhQUFhO1FBQ2Isa0JBQWtCO1FBQ2xCLFlBQVk7UUFDWixnQkFBZ0I7SUFDcEI7SUFDQTtRQUNJLFlBQVk7UUFDWiw4TEFBOEw7UUFDOUwsMEJBQTBCO1FBQzFCLFdBQVc7UUFDWCxrQkFBa0I7UUFDbEIsVUFBVTtJQUNkO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmO0lBQ0E7UUFDSSxrQkFBa0I7UUFDbEIsUUFBUTtRQUNSLFNBQVM7UUFDVCxpQkFBaUI7UUFDakIsbUJBQW1CO1FBQ25CLGtCQUFrQjtRQUNsQixVQUFVO1FBQ1YsV0FBVztJQUNmIiwiZmlsZSI6InNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyJodG1sLCBib2R5e1xuICAgICAgICBtYXJnaW46IDIwcHg7XG4gICAgfVxuICAgICNtYWluIHtcbiAgICAgICAgaGVpZ2h0OiA2MDBweDtcbiAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICB3aWR0aDogNjAwcHg7XG4gICAgICAgIGJhY2tncm91bmQ6IGdvbGQ7XG4gICAgfVxuICAgICNib2FyZCB7XG4gICAgICAgIG1hcmdpbjogMzBweDtcbiAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogcmVwZWF0aW5nLWxpbmVhci1ncmFkaWVudCgwZGVnLHRyYW5zcGFyZW50LHRyYW5zcGFyZW50IDI5cHgsIGJsYWNrIDI5cHgsIGJsYWNrIDMwcHgpLCByZXBlYXRpbmctbGluZWFyLWdyYWRpZW50KC05MGRlZyx0cmFuc3BhcmVudCx0cmFuc3BhcmVudCAyOXB4LCBibGFjayAyOXB4LCBibGFjayAzMHB4KTtcbiAgICAgICAgYmFja2dyb3VuZC1zaXplOiAzMHB4IDMwcHg7XG4gICAgICAgIGhlaWdodDogNTQxO1xuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgIHdpZHRoOiA1NDE7XG4gICAgfVxuICAgICNzbWFsbGNpcmNsZTEge1xuICAgICAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgICAgIHdpZHRoOiA0O1xuICAgICAgICBoZWlnaHQ6IDQ7XG4gICAgICAgIGJhY2tncm91bmQ6IGJsYWNrO1xuICAgICAgICBib3JkZXI6IHNvbGlkIGJsYWNrO1xuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgIHRvcDogMTE3cHg7XG4gICAgICAgIGxlZnQ6IDExN3B4O1xuICAgIH1cbiAgICAjc21hbGxjaXJjbGUyIHtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICAgICAgICB3aWR0aDogMztcbiAgICAgICAgaGVpZ2h0OiAzO1xuICAgICAgICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgICAgICAgYm9yZGVyOiBzb2xpZCBibGFjaztcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICB0b3A6IDExN3B4O1xuICAgICAgICBsZWZ0OiAyOTdweDtcbiAgICB9XG4gICAgI3NtYWxsY2lyY2xlMyB7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICAgICAgd2lkdGg6IDM7XG4gICAgICAgIGhlaWdodDogMztcbiAgICAgICAgYmFja2dyb3VuZDogYmxhY2s7XG4gICAgICAgIGJvcmRlcjogc29saWQgYmxhY2s7XG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgICAgdG9wOiAxMTdweDtcbiAgICAgICAgbGVmdDogNDc3cHg7XG4gICAgfVxuICAgICNzbWFsbGNpcmNsZTQge1xuICAgICAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgICAgIHdpZHRoOiAzO1xuICAgICAgICBoZWlnaHQ6IDM7XG4gICAgICAgIGJhY2tncm91bmQ6IGJsYWNrO1xuICAgICAgICBib3JkZXI6IHNvbGlkIGJsYWNrO1xuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgIHRvcDogMjk3cHg7XG4gICAgICAgIGxlZnQ6IDExN3B4O1xuICAgIH1cbiAgICAjc21hbGxjaXJjbGU1IHtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICAgICAgICB3aWR0aDogMztcbiAgICAgICAgaGVpZ2h0OiAzO1xuICAgICAgICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgICAgICAgYm9yZGVyOiBzb2xpZCBibGFjaztcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICB0b3A6IDI5N3B4O1xuICAgICAgICBsZWZ0OiAyOTdweDtcbiAgICB9XG4gICAgI3NtYWxsY2lyY2xlNiB7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICAgICAgd2lkdGg6IDM7XG4gICAgICAgIGhlaWdodDogMztcbiAgICAgICAgYmFja2dyb3VuZDogYmxhY2s7XG4gICAgICAgIGJvcmRlcjogc29saWQgYmxhY2s7XG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgICAgdG9wOiAyOTdweDtcbiAgICAgICAgbGVmdDogNDc3cHg7XG4gICAgfVxuICAgICNzbWFsbGNpcmNsZTcge1xuICAgICAgICBib3JkZXItcmFkaXVzOiA1MCU7XG4gICAgICAgIHdpZHRoOiAzO1xuICAgICAgICBoZWlnaHQ6IDM7XG4gICAgICAgIGJhY2tncm91bmQ6IGJsYWNrO1xuICAgICAgICBib3JkZXI6IHNvbGlkIGJsYWNrO1xuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICAgIHRvcDogNDc3cHg7XG4gICAgICAgIGxlZnQ6IDExN3B4O1xuICAgIH1cbiAgICAjc21hbGxjaXJjbGU4IHtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICAgICAgICB3aWR0aDogMztcbiAgICAgICAgaGVpZ2h0OiAzO1xuICAgICAgICBiYWNrZ3JvdW5kOiBibGFjaztcbiAgICAgICAgYm9yZGVyOiBzb2xpZCBibGFjaztcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICB0b3A6IDQ3N3B4O1xuICAgICAgICBsZWZ0OiAyOTdweDtcbiAgICB9XG4gICAgI3NtYWxsY2lyY2xlOSB7XG4gICAgICAgIGJvcmRlci1yYWRpdXM6IDUwJTtcbiAgICAgICAgd2lkdGg6IDM7XG4gICAgICAgIGhlaWdodDogMztcbiAgICAgICAgYmFja2dyb3VuZDogYmxhY2s7XG4gICAgICAgIGJvcmRlcjogc29saWQgYmxhY2s7XG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgICAgdG9wOiA0NzdweDtcbiAgICAgICAgbGVmdDogNDc3cHg7XG4gICAgfVxuIl19 */"
+module.exports = "html, body{\n        margin: 20px;\n    }\n    #board {\n        margin: 20px;\n        background-image: url(\"/static/images/board.jpg\");\n        background-repeat: no-repeat;\n        background-position: center-top;\n        width: 768px;\n        height: 768px;\n        background-size: contain;\n        position: absolute;\n    }\n    #blackStone {\n        background-image: url(\"/static/images/black.png\");\n        background-repeat: no-repeat;\n        width: 40px;\n        height: 40px;\n        background-size: contain;\n        position: absolute;\n    }\n    #whiteStone {\n        background-image: url(\"/static/images/white.png\");\n        background-repeat: no-repeat;\n        width: 40px;\n        height: 40px;\n        background-size: contain;\n        position: absolute;\n    }\n    li {\n        list-style:none;\n        padding-left:0px;\n    }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYXBwLmNvbXBvbmVudC5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7UUFDUSxZQUFZO0lBQ2hCO0lBQ0E7UUFDSSxZQUFZO1FBQ1osaURBQWlEO1FBQ2pELDRCQUE0QjtRQUM1QiwrQkFBK0I7UUFDL0IsWUFBWTtRQUNaLGFBQWE7UUFDYix3QkFBd0I7UUFDeEIsa0JBQWtCO0lBQ3RCO0lBQ0E7UUFDSSxpREFBaUQ7UUFDakQsNEJBQTRCO1FBQzVCLFdBQVc7UUFDWCxZQUFZO1FBQ1osd0JBQXdCO1FBQ3hCLGtCQUFrQjtJQUN0QjtJQUNBO1FBQ0ksaURBQWlEO1FBQ2pELDRCQUE0QjtRQUM1QixXQUFXO1FBQ1gsWUFBWTtRQUNaLHdCQUF3QjtRQUN4QixrQkFBa0I7SUFDdEI7SUFDQTtRQUNJLGVBQWU7UUFDZixnQkFBZ0I7SUFDcEIiLCJmaWxlIjoic3JjL2FwcC9hcHAuY29tcG9uZW50LmNzcyIsInNvdXJjZXNDb250ZW50IjpbImh0bWwsIGJvZHl7XG4gICAgICAgIG1hcmdpbjogMjBweDtcbiAgICB9XG4gICAgI2JvYXJkIHtcbiAgICAgICAgbWFyZ2luOiAyMHB4O1xuICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCIvc3RhdGljL2ltYWdlcy9ib2FyZC5qcGdcIik7XG4gICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgICAgIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlci10b3A7XG4gICAgICAgIHdpZHRoOiA3NjhweDtcbiAgICAgICAgaGVpZ2h0OiA3NjhweDtcbiAgICAgICAgYmFja2dyb3VuZC1zaXplOiBjb250YWluO1xuICAgICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgfVxuICAgICNibGFja1N0b25lIHtcbiAgICAgICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKFwiL3N0YXRpYy9pbWFnZXMvYmxhY2sucG5nXCIpO1xuICAgICAgICBiYWNrZ3JvdW5kLXJlcGVhdDogbm8tcmVwZWF0O1xuICAgICAgICB3aWR0aDogNDBweDtcbiAgICAgICAgaGVpZ2h0OiA0MHB4O1xuICAgICAgICBiYWNrZ3JvdW5kLXNpemU6IGNvbnRhaW47XG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICB9XG4gICAgI3doaXRlU3RvbmUge1xuICAgICAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCIvc3RhdGljL2ltYWdlcy93aGl0ZS5wbmdcIik7XG4gICAgICAgIGJhY2tncm91bmQtcmVwZWF0OiBuby1yZXBlYXQ7XG4gICAgICAgIHdpZHRoOiA0MHB4O1xuICAgICAgICBoZWlnaHQ6IDQwcHg7XG4gICAgICAgIGJhY2tncm91bmQtc2l6ZTogY29udGFpbjtcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgIH1cbiAgICBsaSB7XG4gICAgICAgIGxpc3Qtc3R5bGU6bm9uZTtcbiAgICAgICAgcGFkZGluZy1sZWZ0OjBweDtcbiAgICB9XG4iXX0= */"
 
 /***/ }),
 
@@ -41,7 +41,7 @@ module.exports = "html, body{\n        margin: 20px;\n    }\n    #main {\n      
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!--The content below is only a placeholder and can be replaced.-->\n<div style=\"text-align:center\">\n  <h1>\n    Welcome to {{ title }}!\n  </h1>\n  <h2>Test App: {{c1.result}}</h2>\n  <button (click)=\"click1()\" >stop</button>\n  <button (click)=\"click2()\" >TEST</button>\n</div>\n\n\n  <body>\n      <div id = \"main\">\n          <canvas id=\"board\" width = \"541\" height=\"541\"></canvas> \n              <div id=\"smallcircle1\"></div>\n              <div id=\"smallcircle2\"></div>\n              <div id=\"smallcircle3\"></div>\n              <div id=\"smallcircle4\"></div>\n              <div id=\"smallcircle5\"></div>\n              <div id=\"smallcircle6\"></div>\n              <div id=\"smallcircle7\"></div>\n              <div id=\"smallcircle8\"></div>\n              <div id=\"smallcircle9\"></div>               \n      </div>\n      <br/>\n  </body>\n"
+module.exports = "\n<!--The content below is only a placeholder and can be replaced.-->\n\n<div style=\"text-align:center\">\n    <h1>\n        Welcome to {{ title }}!\n    </h1>\n    <h2>Test App: {{ c1.result }}</h2>\n    <button (click)=\"click1()\" >STOP</button>\n    <button (click)=\"click2()\" >TEST</button>\n</div>\n\n<div id = \"board\">\n    <li *ngFor=\"let stone of stoneList\">\n        <div id = {{stone.class}} [ngStyle]=\"{'left': stone.left , 'top': stone.top }\"></div>\n    </li>\n</div>\n"
 
 /***/ }),
 
@@ -64,13 +64,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var Stone = /** @class */ (function () {
+    function Stone() {
+    }
+    return Stone;
+}());
 var AppComponent = /** @class */ (function () {
     function AppComponent(http) {
         this.http = http;
         this.title = 'Connect 6';
         this.source = Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["timer"])(2000, 1000);
-        this.products = [];
+        this.stoneList = [];
         this.c1 = new Result();
+        this.products = [];
         this.c1.result = "test";
     }
     AppComponent.prototype.click1 = function () {
@@ -78,6 +84,7 @@ var AppComponent = /** @class */ (function () {
     };
     AppComponent.prototype.click2 = function () {
         var _this = this;
+        this.resetData().subscribe();
         this.sub = this.source.subscribe(function (t) { return _this.onTimeOut(); });
     };
     AppComponent.prototype.onTimeOut = function () {
@@ -86,84 +93,79 @@ var AppComponent = /** @class */ (function () {
             console.log(data);
             _this.products = data;
         });
-        var canvas = document.getElementById('board');
-        if (canvas.getContext) {
-            for (var _i = 0, _a = this.products; _i < _a.length; _i++) {
-                var entry = _a[_i];
-                var color = entry.client;
-                var coor_X = entry.x;
-                var coor_Y = entry.y;
-                var ctx = canvas.getContext('2d');
-                var y;
-                switch (coor_X) {
-                    case 'A':
-                        y = 0 * 30;
-                        break;
-                    case 'B':
-                        y = 1 * 30;
-                        break;
-                    case 'C':
-                        y = 2 * 30;
-                        break;
-                    case 'D':
-                        y = 3 * 30;
-                        break;
-                    case 'E':
-                        y = 4 * 30;
-                        break;
-                    case 'F':
-                        y = 5 * 30;
-                        break;
-                    case 'G':
-                        y = 6 * 30;
-                        break;
-                    case 'H':
-                        y = 7 * 30;
-                        break;
-                    case 'I':
-                        y = 8 * 30;
-                        break;
-                    case 'J':
-                        y = 9 * 30;
-                        break;
-                    case 'K':
-                        y = 10 * 30;
-                        break;
-                    case 'L':
-                        y = 11 * 30;
-                        break;
-                    case 'M':
-                        y = 12 * 30;
-                        break;
-                    case 'N':
-                        y = 13 * 30;
-                        break;
-                    case 'O':
-                        y = 14 * 30;
-                        break;
-                    case 'P':
-                        y = 15 * 30;
-                        break;
-                    case 'Q':
-                        y = 16 * 30;
-                        break;
-                    case 'R':
-                        y = 17 * 30;
-                        break;
-                    case 'S':
-                        y = 18 * 30;
-                        break;
-                }
-                var x = (coor_Y - 1) * 30;
-                ctx.beginPath();
-                ctx.arc(x, y, 14, 0, 2 * Math.PI, false);
-                ctx.fillStyle = color;
-                ctx.fill();
-                ctx.lineWidth = 1;
-                ctx.strokeSytle = "black";
-                ctx.stroke();
-                this.resultData().subscribe(function (m) { return _this.c1.result = m.toString(); });
+        var stoneObj = new Stone();
+        for (var _i = 0, _a = this.products; _i < _a.length; _i++) {
+            var entry = _a[_i];
+            var color = entry.client;
+            var coor_X = entry.x;
+            var coor_Y = entry.y;
+            var left = void 0;
+            switch (coor_X) {
+                case 'A':
+                    left = 4 + 0 * 40;
+                    break;
+                case 'B':
+                    left = 4 + 1 * 40;
+                    break;
+                case 'C':
+                    left = 4 + 2 * 40;
+                    break;
+                case 'D':
+                    left = 4 + 3 * 40;
+                    break;
+                case 'E':
+                    left = 4 + 4 * 40;
+                    break;
+                case 'F':
+                    left = 4 + 5 * 40;
+                    break;
+                case 'G':
+                    left = 4 + 6 * 40;
+                    break;
+                case 'H':
+                    left = 4 + 7 * 40;
+                    break;
+                case 'I':
+                    left = 4 + 8 * 40;
+                    break;
+                case 'J':
+                    left = 4 + 9 * 40;
+                    break;
+                case 'K':
+                    left = 4 + 10 * 40;
+                    break;
+                case 'L':
+                    left = 4 + 11 * 40;
+                    break;
+                case 'M':
+                    left = 4 + 12 * 40;
+                    break;
+                case 'N':
+                    left = 4 + 13 * 40;
+                    break;
+                case 'O':
+                    left = 4 + 14 * 40;
+                    break;
+                case 'P':
+                    left = 4 + 15 * 40;
+                    break;
+                case 'Q':
+                    left = 4 + 16 * 40;
+                    break;
+                case 'R':
+                    left = 4 + 17 * 40;
+                    break;
+                case 'S':
+                    left = 4 + 18 * 40;
+                    break;
             }
+            var top_1 = 4 + (19 - coor_Y) * 40;
+            stoneObj.class = color + 'Stone';
+            stoneObj.left = left + 'px';
+            stoneObj.top = top_1 + 'px';
+            var secondTick = Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["timer"])(1000, 1000);
+            secondTick.subscribe(function (tick) { _this.stoneList.push(stoneObj); });
+            this.resultData().subscribe(function (m) { return _this.c1.result = m.toString(); });
         }
     };
     AppComponent.prototype.resetData = function () {
@@ -173,8 +175,7 @@ var AppComponent = /** @class */ (function () {
         return this.http.get("./resultdata/");
     };
     AppComponent.prototype.getAllData = function () {
-        return this.http
-            .get("./home/omok/");
+        return this.http.get("./home/omok/");
     };
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -360,7 +361,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! /home/bodago/sideProject3_api/Angular/src/main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! /home/haminji/sideProject3_api/Angular/src/main.ts */"./src/main.ts");
 
 
 /***/ })

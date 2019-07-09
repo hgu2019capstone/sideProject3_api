@@ -1,26 +1,17 @@
+
 <!--The content below is only a placeholder and can be replaced.-->
+
 <div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <h2>Test App: {{c1.result}}</h2>
-  <button (click)="click1()" >stop</button>
-  <button (click)="click2()" >TEST</button>
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
+    <h2>Test App: {{ c1.result }}</h2>
+    <button (click)="click1()" >STOP</button>
+    <button (click)="click2()" >TEST</button>
 </div>
 
-
-  <body>
-      <div id = "main">
-          <canvas id="board" width = "541" height="541"></canvas> 
-              <div id="smallcircle1"></div>
-              <div id="smallcircle2"></div>
-              <div id="smallcircle3"></div>
-              <div id="smallcircle4"></div>
-              <div id="smallcircle5"></div>
-              <div id="smallcircle6"></div>
-              <div id="smallcircle7"></div>
-              <div id="smallcircle8"></div>
-              <div id="smallcircle9"></div>               
-      </div>
-      <br/>
-  </body>
+<div id = "board">
+    <li *ngFor="let stone of stoneList">
+        <div id = {{stone.class}} [ngStyle]="{'left': stone.left , 'top': stone.top }"></div>
+    </li>
+</div>

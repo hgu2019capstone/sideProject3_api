@@ -1,107 +1,33 @@
 html, body{
         margin: 20px;
     }
-    #main {
-        height: 600px;
-        position: relative;
-        width: 600px;
-        background: gold;
-    }
     #board {
-        margin: 30px;
-        background-image: repeating-linear-gradient(0deg,transparent,transparent 29px, black 29px, black 30px), repeating-linear-gradient(-90deg,transparent,transparent 29px, black 29px, black 30px);
-        background-size: 30px 30px;
-        height: 541;
+        margin: 20px;
+        background-image: url("/static/images/board.jpg");
+        background-repeat: no-repeat;
+        background-position: center-top;
+        width: 768px;
+        height: 768px;
+        background-size: contain;
         position: absolute;
-        width: 541;
     }
-    #smallcircle1 {
-        border-radius: 50%;
-        width: 4;
-        height: 4;
-        background: black;
-        border: solid black;
+    #blackStone {
+        background-image: url("/static/images/black.png");
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: contain;
         position: absolute;
-        top: 117px;
-        left: 117px;
     }
-    #smallcircle2 {
-        border-radius: 50%;
-        width: 3;
-        height: 3;
-        background: black;
-        border: solid black;
+    #whiteStone {
+        background-image: url("/static/images/white.png");
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        background-size: contain;
         position: absolute;
-        top: 117px;
-        left: 297px;
     }
-    #smallcircle3 {
-        border-radius: 50%;
-        width: 3;
-        height: 3;
-        background: black;
-        border: solid black;
-        position: absolute;
-        top: 117px;
-        left: 477px;
-    }
-    #smallcircle4 {
-        border-radius: 50%;
-        width: 3;
-        height: 3;
-        background: black;
-        border: solid black;
-        position: absolute;
-        top: 297px;
-        left: 117px;
-    }
-    #smallcircle5 {
-        border-radius: 50%;
-        width: 3;
-        height: 3;
-        background: black;
-        border: solid black;
-        position: absolute;
-        top: 297px;
-        left: 297px;
-    }
-    #smallcircle6 {
-        border-radius: 50%;
-        width: 3;
-        height: 3;
-        background: black;
-        border: solid black;
-        position: absolute;
-        top: 297px;
-        left: 477px;
-    }
-    #smallcircle7 {
-        border-radius: 50%;
-        width: 3;
-        height: 3;
-        background: black;
-        border: solid black;
-        position: absolute;
-        top: 477px;
-        left: 117px;
-    }
-    #smallcircle8 {
-        border-radius: 50%;
-        width: 3;
-        height: 3;
-        background: black;
-        border: solid black;
-        position: absolute;
-        top: 477px;
-        left: 297px;
-    }
-    #smallcircle9 {
-        border-radius: 50%;
-        width: 3;
-        height: 3;
-        background: black;
-        border: solid black;
-        position: absolute;
-        top: 477px;
-        left: 477px;
+    li {
+        list-style:none;
+        padding-left:0px;
     }
