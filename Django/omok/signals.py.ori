@@ -1,0 +1,49 @@
+from django.db.models.signals import post_save
+from django.dispatch import receiver
+from .models import InitStone, ClientColor, Stone
+import random, time, requests
+
+
+@receiver(post_save, sender = InitStone)
+def init_post_save(sender, **kwargs):
+    clientColor = str(ClientColor.objects.last().clientColor)
+    if (clientColor == "black") :
+        x1 = random.choice('ABCDEFGHIJKLMNOPQRS')
+        x2 = random.choice('ABCDEFGHIJKLMNOPQRS')
+        y1 = random.randrange(1,20)
+        y2 = random.randrange(1,20)
+
+        data = {'color': "white", 'x1' : x1, 'y1' : y1, 'x2' : x2, 'y2' : y2 }
+        requests.post('http://turnicode.cafe24.com:8880/stone/',data=data)
+
+@receiver(post_save, sender = Stone)
+def stone_post_save(sender, **kwargs):
+    clientColor = str(ClientColor.objects.last().clientColor)
+
+    if(str(Stone.objects.last().color) == clientColor):
+      if(clientColor == "white"):
+          mColor = "black"
+      else:
+          mColor = "white"
+
+      time.sleep(1)
+      x1 = random.choice('ABCDEFGHIJKLMNOPQRS')
+      x2 = random.choice('ABCDEFGHIJKLMNOPQRS')
+      y1 = random.randrange(1,20)
+      y2 = random.randrange(1,20)
+
+      data = {'color': "white", 'x1' : x1, 'y1' : y1, 'x2' : x2, 'y2' : y2 }  
+      requests.post('http://turnicode.cafe24.com:8880/stone/',data=data)
+
+
+
+
+
+
+
+
+
+
+
+
+
